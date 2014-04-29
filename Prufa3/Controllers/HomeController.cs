@@ -10,6 +10,8 @@ namespace Prufa3.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Message = "Forsíðan";
+
             return View();
         }
 
