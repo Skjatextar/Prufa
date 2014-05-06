@@ -56,6 +56,19 @@ input[type="checkbox"].input-validation-error {
 
 #Leitbox{
     width: 1000px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Leitmenu{
+    float: left;
+}
+
+#Leitmidjad {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
 }
 
 #footer-left{
