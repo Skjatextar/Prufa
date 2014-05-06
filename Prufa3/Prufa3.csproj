@@ -169,6 +169,14 @@
     <Compile Include="Models\Entity\Request.cs" />
     <Compile Include="Models\Entity\SubFile.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Interface\IClientRepository.cs" />
+    <Compile Include="Models\Interface\ICommentRepository.cs" />
+    <Compile Include="Models\Interface\IRequestRepository.cs" />
+    <Compile Include="Models\Interface\ISubFileRepository.cs" />
+    <Compile Include="Models\Repository\ClientRepository.cs" />
+    <Compile Include="Models\Repository\CommentRepositorycs.cs" />
+    <Compile Include="Models\Repository\RequestRepository.cs" />
+    <Compile Include="Models\Repository\SubFileRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -221,8 +229,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\Interface\" />
-    <Folder Include="Models\Repository\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
