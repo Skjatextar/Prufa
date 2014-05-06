@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 15px;
+    /*padding-top: 15px;*/
     padding-bottom: 20px;
     background-color: #F8F8F8;
 }
@@ -41,16 +41,22 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
-#header {
-    text-align:center;
-    padding-left: 100px;
-    padding-top: 10px;
+/*-----Header byrjar-------*/
+#head {
+    background-image:url('headerphoto.png');
+    height:130px;
+    text-align:center;   
+}
+#div-head{
+    font-size: 50px;
+    padding-top:20px;
 }
 #head-left{
     float:left;
-    paddig:60px;
+    padding-left:60px;
 }
-#login-facebook{
+#head-login{
     float:right;
+    padding-top: 18px;
 }
-
+/*-----Header endar-------*/
