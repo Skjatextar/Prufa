@@ -57,3 +57,11 @@ input[type="checkbox"].input-validation-error {
 #Leitbox{
     width: 1000px;
 }
+
+#footer-left{
+    float: left;
+}
+
+#footer-right{
+    float: right;
+}
