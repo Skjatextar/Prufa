@@ -1,7 +1,6 @@
 ﻿body {
-    /*padding-top: 15px;*/
     padding-bottom: 20px;
-    background-color: #F8F8F8;
+    background-color:#F5F5F5;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -41,21 +40,23 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
-/*-----Header byrjar-------*/
-#head {
-    background-image:url('headerphoto.png');
-    height:130px;
-    text-align:center;   
+#container {
+    padding-top:55px;
 }
-#div-head{
-    font-size: 50px;
-    padding-top:20px;
+
+#Leitbox {
+    width: 1000px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
 }
-#head-left{
-    float:left;
-    padding-left:60px;
+
+#Leitmenu{
+    float: left;
 }
-#head-login{
-    float:right;
+
+#Leitmidjad {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
 }
-/*-----Header endar-------*/

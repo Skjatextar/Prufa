@@ -10,38 +10,43 @@
 </head>
 <body>
     <div id="head">
-        <div id="div-head">Skjátextar.is</div>
+        <div id="head-left">Skjátextar.is</div>
+
+        <span>00:43:42,586 --> 00:43:44,952 </span><br/>
+         <span>These aren't the droids you're looking for.</span>
+       
         <div id="head-login" class="btn ">
 
             @Html.Partial("_LoginPartial")
 
         </div>
-    </div>
-    <div class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Subs", "Index", "Home", null, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Heim", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Beiðni", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Gagnaleit", "Index", "Home")</li>
-                    <li>@Html.ActionLink("UM okkur", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Leiðbeiningar", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Upphala", "About", "Home")</li>
-                    <li>@Html.ActionLink("Persónustillingar", "Contact", "Home")</li>
-                </ul>
+        <div class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- @Html.ActionLink("Subs", "Index", "Home", null, new { @class = "navbar-brand" })  þetta er ekki notað -->
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Heim", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Beiðni", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Gagnaleit", "Index", "Home")</li>
+                        <li>@Html.ActionLink("UM okkur", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Leiðbeiningar", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Upphala", "About", "Home")</li>
+                        <li>@Html.ActionLink("Persónustillingar", "Contact", "Home")</li>
+                    </ul>
 
+                </div>
             </div>
         </div>
     </div>
-    <div class="container body-content">
+
+    <div id="container"class="container body-content">
         @RenderBody()
         <hr />
         <footer>

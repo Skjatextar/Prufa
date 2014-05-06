@@ -159,12 +159,28 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CommentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RequestController.cs" />
+    <Compile Include="Controllers\SubFileController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Entity\Client.cs" />
+    <Compile Include="Models\Entity\Comment.cs" />
+    <Compile Include="Models\Entity\Request.cs" />
+    <Compile Include="Models\Entity\SubFile.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Interface\IClientRepository.cs" />
+    <Compile Include="Models\Interface\ICommentRepository.cs" />
+    <Compile Include="Models\Interface\IRequestRepository.cs" />
+    <Compile Include="Models\Interface\ISubFileRepository.cs" />
+    <Compile Include="Models\Repository\ClientRepository.cs" />
+    <Compile Include="Models\Repository\CommentRepositorycs.cs" />
+    <Compile Include="Models\Repository\RequestRepository.cs" />
+    <Compile Include="Models\Repository\SubFileRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -172,7 +188,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\head-img.png" />
+    <Content Include="Content\head.css" />
     <Content Include="Content\headerphoto.png" />
+    <Content Include="Content\Headohoto.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -219,6 +237,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="App_Start\App_LocalResources\" />
+    <Folder Include="Views\Comment\" />
+    <Folder Include="Views\Request\" />
+    <Folder Include="Views\SubFile\" />
+    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
