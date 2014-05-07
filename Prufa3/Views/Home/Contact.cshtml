@@ -1,53 +1,30 @@
-﻿@using Prufa3.Models.Entity
+﻿@model IEnumerable<Prufa3.Models.Entity.Client>
 
 <table>
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.FirstMidName)
+            @Html.DisplayNameFor(model => model.sUsername)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.EnrollmentDate)
-        </th>
-        <th></th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.sTitle)
+        </th>*@
+        @*<th>
+            @Html.DisplayNameFor(model => model.sRequestDescription)
+        </th>*@
     </tr>
 
     @foreach (var item in Model)
     {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.LastName)
+                @Html.DisplayFor(modelItem => item.sUsername)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstMidName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EnrollmentDate)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
-            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.sTitle)
+            </td>*@
+            @*<td>
+                @Html.DisplayFor(modelItem => item.sRequestDescription)
+            </td>*@
         </tr>
     }
-
-    @*@{
-            ViewBag.Title = "Contact";
-        }
-        <h2>@ViewBag.Title.</h2>
-        <h3>@ViewBag.Message</h3>
-
-        <address>
-            One Microsoft Way<br />
-            Redmond, WA 98052-6399<br />
-            <abbr title="Phone">P:</abbr>
-            425.555.0100
-        </address>
-
-        <address>
-            <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-        </address>*@
+</table>

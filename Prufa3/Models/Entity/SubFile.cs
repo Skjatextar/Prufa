@@ -35,9 +35,9 @@ namespace Prufa3.Models.Entity
 
         // Adkomylyklar ------------------------------------------------------------------
         // (one-to-one) - tenging i notanda
-        public int iClientId { get; set; }
+        public string   sUsername { get; set; }
         // (one-to-one) - tenging i notanda
-        public int iRequestId { get; set; }
+        public int      iRequestId { get; set; }
         // (one-to-many) - listi af umsognum
         public virtual ICollection<Comment> vComments { get; set; }
         // -------------------------------------------------------------------------------
