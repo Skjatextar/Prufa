@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using StudentApplication.Models;
 namespace Prufa3.Controllers
 {
-    public class HomeController : Controller
+    public class CommentController : Controller
     {
         public ActionResult Index()
         {
