@@ -54,9 +54,11 @@ input[type="checkbox"].input-validation-error {
     float:right;
 }
 
+/* CSS fyrir forsíðu og beiðnaleitarsíðu / Index, Search  */
+
 #Leitbox{
     width: 1000px;
-    float: left;
+    float: right;
     margin-left: auto;
     margin-right: auto;
 }
@@ -71,8 +73,90 @@ input[type="checkbox"].input-validation-error {
     width: 500px;
 }
 
-#Breadcrumb {
+#Leftbox{
+    margin-right: 30px;
+}
+
+#Search-boxes{
     margin-left: auto;
     margin-right: auto;
-    width: 86px;
+    width: 594px;
+}
+
+.Breadcrumb {
+    margin-left: auto;
+    margin-right: auto;
+    width: 206px;
+}
+
+
+
+/*  Fileform CSS / Senda inn skrá  */
+
+#upload  {
+    margin-left: 400px;
+    margin-right: 500px;
+    padding: 50px;
+    width: 500px;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.plass {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left:25px;
+
+}
+
+.skrafield{
+    width: 300px;
+    float: right;
+}
+
+#radioplass{
+    margin-left: 100px;
+}
+footer {
+    padding-top: 80px;
+
+}
+
+#Footer-Left {
+    float: left;
+}
+
+#Footer-Right {
+    float: right;
+}
+
+.Um-okkur > h2 {
+    font-family: 'Lucida Console';
+    margin-left: 0px;
+    clear: both;
+}
+
+.Um-okkur > p {
+    margin-left: 50px;
+}
+
+.Um-okkur > h3 {
+    margin-left: 50px;
+}
+
+.Um-okkur > ol {
+    margin-left: 80px;
+}
+
+#um-list {
+    float: right;
+    width: 40%;
+
+}
+
+#um-text {
+    float: left;
+    width: 50%;
+    margin-left: 50px;
 }

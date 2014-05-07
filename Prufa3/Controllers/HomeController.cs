@@ -21,6 +21,13 @@ namespace Prufa3.Controllers
 
             return View();
         }
+
+        public ActionResult FileForm()
+        {
+            ViewBag.Message = "Senda-inn-skrá";
+
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page...";
