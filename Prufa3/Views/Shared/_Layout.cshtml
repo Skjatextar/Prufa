@@ -12,14 +12,10 @@
     <div id="head">
         <div id="head-left">Skjátextar.is</div>
 
-        <span>00:43:42,586 --> 00:43:44,952 </span><br/>
-         <span>These aren't the droids you're looking for.</span>
+        <!--<span id="span1">00:43:42,586 --> <!--00:43:44,952 </span><br/>-->
+               <span id="span2">These aren't the droids you're looking for.</span>
        
-        <div id="head-login" class="btn ">
-
-            @Html.Partial("_LoginPartial")
-
-        </div>
+   
         <div class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
@@ -40,7 +36,7 @@
                         <li>@Html.ActionLink("Upphala", "About", "Home")</li>
                         <li>@Html.ActionLink("Persónustillingar", "Contact", "Home")</li>
                     </ul>
-
+                    @Html.Partial("_LoginPartial")
                 </div>
             </div>
         </div>
@@ -50,9 +46,10 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Hópur: 39</p>
         </footer>
     </div>
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
