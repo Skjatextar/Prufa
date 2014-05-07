@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "FileForm";
+}
+
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Site.css">
+</head>
+<body>
+    <div class="Breadcrumb">
+        <p><a href="/Home/">Heim</a> > <a href="/Home/Search">Beiðni</a> > Senda inn skrá</p>
+    </div>
+
+            <div id="upload">
+
+                <form>
+                    <fieldset>
+                        <legend>Senda inn skrá</legend>
+                        <div class="plass">
+                        Nafn <input class="skrafield" type="text" name="nafn"><br>
+                        </div>
+                        <div class="plass">
+                            Tungumál <input class="skrafield" type="text" name="tungumal"><br>
+                        </div>
+                        <div class="plass">
+                            Slóð á mynd <input class="skrafield" type="text" name="slod"><br>
+                        </div>
+                        <div class="plass">
+                            Gerð
+                            <input id="radioplass" type="radio" name="gerd" value="mynd">Mynd
+                            <input id="radioplass" type="radio" name="gerd" value="thattur">Þáttur
+                            
+                        </div>
+
+                                <p>Nánar</p> <textarea rows="20" cols="50"></textarea><br>
+                                <div>
+
+                                    <input type="button" name="submit" value="Submit">
+                                    <input type="button" name="cancel" value="Hætta vid">
+
+                                </div>
+                    </fieldset>
+                </form>
+                
+            </div>
+
+</body>
+</html>
+

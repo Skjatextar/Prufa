@@ -16,26 +16,26 @@
         <span id="span2">These aren't the droids you're looking for.</span>
 
 
-        <div class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                     <!-- @Html.ActionLink("Subs", "Index", "Home", null, new { @class = "navbar-brand" })  þetta er ekki notað -->
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Heim", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Beiðni", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Gagnaleit", "Index", "Home")</li>
-                        <li>@Html.ActionLink("UM okkur", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Leiðbeiningar", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Upphala", "About", "Home")</li>
-                        <li>@Html.ActionLink("Persónustillingar", "Contact", "Home")</li>
-                    </ul>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Heim", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Beiðni", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Gagnaleit", "Index", "Home")</li>
+                    <li>@Html.ActionLink("UM okkur", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Leiðbeiningar", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Upphala", "About", "Home")</li>
+                    <li>@Html.ActionLink("Persónustillingar", "Contact", "Home")</li>
+                </ul>
                     @Html.Partial("_LoginPartial")
                 </div>
             </div>
@@ -44,12 +44,18 @@
 
     <div id="container" class="container body-content">
         @RenderBody()
-        <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Hópur: 39</p>
+            <div id="Footer-Left">
+                <p>Við mælum með <a href="http://www.videolan.org/vlc/index.html">VLC</a>
+            </div>
+            
+            <div id="footer-right">
+
+                <p>Með því að nota þessa síðu samþykkir þú þessa skilmála (href)</p>
+
+            </div>
         </footer>
     </div>
-
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
