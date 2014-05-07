@@ -17,14 +17,21 @@ namespace Prufa3.Controllers
 
         public ActionResult Search()
         {
-            ViewBag.Message = "Beiðni-Leit";
+            ViewBag.Message = "Beiðni Leit";
 
             return View();
         }
 
         public ActionResult FileForm()
         {
-            ViewBag.Message = "Senda-inn-skrá";
+            ViewBag.Message = "Senda inn skrá";
+
+            return View();
+        }
+
+        public ActionResult NewForm()
+        {
+            ViewBag.Message = "Ný beiðni";
 
             return View();
         }

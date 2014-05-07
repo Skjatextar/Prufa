@@ -63,11 +63,11 @@ input[type="checkbox"].input-validation-error {
     margin-right: auto;
 }
 
-#Leitmenu{
+#SearchMenu{
     float: left;
 }
 
-#Leitmidjad {
+#SearchCentered {
     margin-left: auto;
     margin-right: auto;
     width: 500px;
@@ -103,18 +103,22 @@ input[type="checkbox"].input-validation-error {
 
 }
 
-.plass {
+.room {
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left:25px;
 
 }
 
-.skrafield{
+.textbox-room{
     width: 300px;
     float: right;
 }
 
-#radioplass{
+#radioroom{
     margin-left: 100px;
+}
+
+#SearchMenu{
+    margin-top: 5px;
 }

@@ -1,7 +1,9 @@
-﻿@{
-    ViewBag.Title = "FileForm";
+﻿
+@{
+    ViewBag.Title = "NewForm";
 }
 
+<
 <html>
 <head>
     <title></title>
@@ -9,12 +11,12 @@
 </head>
 <body>
     <div class="Breadcrumb">
-        <p><a href="/Home/">Heim</a> > <a href="/Home/Search">Beiðni</a> > Senda inn skrá</p>
+        <p><a href="/Home/">Heim</a> > <a href="/Home/Search">Beiðni</a> > Ný beiðni</p>
     </div>
     <div id="upload">
         <form>
             <fieldset>
-                <legend>Senda inn skrá</legend>
+                <legend>Nýbeiðni</legend>
                 <div class="room">
                     Nafn <input class="textbox-room" type="text" name="name"><br>
                 </div>
@@ -26,8 +28,18 @@
                 </div>
                 <div class="room">
                     Gerð
-                    <input id="radioroom" type="radio" name="type" value="movie">Mynd
-                    <input id="radioroom" type="radio" name="type" value="tv-show">Þáttur
+                    <input id="radioplass" type="radio" name="type" value="movie">Mynd
+                    <input id="radioplass" type="radio" name="type" value="tv-show">Þáttur
+                </div>
+                <div>
+                    <select id="SearchMenu" name="Category">
+                        <option value="menu">--Velja flokk--</option>
+                        <option value="cartoon">Barnaefni</option>
+                        <option value="drama">Drama</option>
+                        <option value="comedy">Gaman</option>
+                        <option value="thriller">Hrollvekja</option>
+                        <option value="action">Spenna</option>
+                    </select>
 
                 </div>
                 <p>Nánar</p> <textarea rows="20" cols="50"></textarea><br>
