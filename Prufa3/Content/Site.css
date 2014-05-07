@@ -41,10 +41,11 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 #container {
+}
 
 /* CSS fyrir forsíðu og beiðnaleitarsíðu / Index, Search  */
 
-#Leitbox{
+#Leitbox {
     width: 1000px;
     float: right;
     margin-left: auto;

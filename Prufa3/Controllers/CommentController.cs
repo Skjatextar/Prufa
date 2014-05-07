@@ -10,8 +10,9 @@ namespace Prufa3.Controllers
     {
         public ActionResult Index()
         {
-            
-            return View();
+            StudentRepository repository = new StudentRepository();
+            var model = repository.GetAllStudents();
+            return View(model);
         }
 
         public ActionResult About()
