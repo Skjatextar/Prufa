@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Prufa3.App_Data.DataAccessLayer;
 using StudentApplication.Models;
 using Prufa3.Models;
 namespace Prufa3.Controllers
@@ -45,9 +46,11 @@ namespace Prufa3.Controllers
 
         public ActionResult Contact()
         {
+            SubDataContext db = new SubDataContext();
+
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            return View(db.Clients.ToList());
         }
     }
 }

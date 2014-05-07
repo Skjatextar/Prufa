@@ -165,7 +165,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RequestController.cs" />
     <Compile Include="Controllers\SubFileController.cs" />
-    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\ClientController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -185,6 +185,8 @@
     <Compile Include="Models\Repository\SubFileRepository.cs" />
     <Compile Include="Models\Students.cs" />
     <Compile Include="Models\StudentsRepository.cs" />
+    <Compile Include="App_Data\DataAccessLayer\SubDataContext.cs" />
+    <Compile Include="App_Data\DataAccessLayer\SubDataInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -241,7 +243,6 @@
     <Content Include="Views\Home\NewForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="App_Start\App_LocalResources\" />
     <Folder Include="Views\Comment\" />
     <Folder Include="Views\Request\" />
