@@ -20,7 +20,6 @@ namespace Prufa3.Controllers
         public ActionResult Search()
         {
             ViewBag.Message = "Beiðni Leit";
-
             return View();
         }
 
