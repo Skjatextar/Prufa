@@ -386,7 +386,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #800080;
 }
 
 .sr-only {
@@ -4384,8 +4384,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+    background-color: lightgray;
+    border-color: #800080;
+    margin-right: 110px;
+    margin-left: 110px;
+    position: relative; 
+	bottom: -25px;
+    
 }
 
 .navbar-default .navbar-brand {
@@ -4399,16 +4404,16 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default .navbar-text {
-  color: #777777;
+  color: #333333;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #777777;
+  color: #333333;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333333;
+  color: #800080;
   background-color: transparent;
 }
 

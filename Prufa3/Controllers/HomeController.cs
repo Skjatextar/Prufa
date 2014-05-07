@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using StudentApplication.Models;
 namespace Prufa3.Controllers
 {
     public class HomeController : Controller
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Forsíðan";
-
-            return View();
+            StudentRepository repository = new StudentRepository();
+            var model = repository.GetAllStudents();
+            return View(model);
         }
 
         public ActionResult Search()
