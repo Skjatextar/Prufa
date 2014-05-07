@@ -9,24 +9,13 @@
 
 </head>
 <body>
-    <div id="header">
-        <div id="head-left">
-            <img width="40px" height="40px" src='@Url.Content("~/Content/logo-subs.jpg")' />
-        </div>
-        hérna kemur header með logo á vinstri og mynd í miðunni og
-        taka á hægri með innskrá og nýskrá
-        <!--<div id="login-facebook" >
-            <a href="#"
-               class="zocial facebook">
-                Sign in with Facebook
-            </a>
-        </div>-->
-        <div class="btn ">
+    <div id="head">
+        <div id="head-left">Skjátextar.is</div>
 
-            @Html.Partial("_LoginPartial")
+        <!--<span id="span1">00:43:42,586 --> <!--00:43:44,952 </span><br/>-->
+        <span id="span2">These aren't the droids you're looking for.</span>
 
-        </div>
-    </div>
+
     <div class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
@@ -35,7 +24,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Subs", "Index", "Home", null, new { @class = "navbar-brand" })
+                    <!-- @Html.ActionLink("Subs", "Index", "Home", null, new { @class = "navbar-brand" })  þetta er ekki notað -->
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -47,18 +36,17 @@
                     <li>@Html.ActionLink("Upphala", "About", "Home")</li>
                     <li>@Html.ActionLink("Persónustillingar", "Contact", "Home")</li>
                 </ul>
-
+                    @Html.Partial("_LoginPartial")
+                </div>
             </div>
         </div>
     </div>
-    <div class="container body-content">
+
+    <div id="container" class="container body-content">
         @RenderBody()
-        <hr />
         <footer>
-            <div id="footer-left">
-
+            <div id="Footer-Left">
                 <p>Við mælum með <a href="http://www.videolan.org/vlc/index.html">VLC</a>
-
             </div>
             
             <div id="footer-right">

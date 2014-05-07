@@ -28,7 +28,7 @@ namespace Prufa3
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
                       "~/Content/head.css",
-                      "~/Content/footer.css"));
+                      "~/Content/searchbox.css"));
         }
     }
 }

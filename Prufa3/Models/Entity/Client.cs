@@ -9,23 +9,29 @@ namespace Prufa3.Models.Entity
 {
     public class Client
     {
-        [Key]
+        // Eigindi fyrir notanda ---------------------------------------------------------
+        [Key]       // Frumlykill
         public string   Username { get; set; }
-        [Required]
+        [Required]  // Ekki nullable
         public string   Pass { get; set; }
-        [Required]
+        [Required]  // Ekki nullable
         public string   Email { get; set; }
+        // Notandi faer tign med ordum en her er thad taknad med tolum fra t.d. 1-5
         public int      Ranking { get; set; }
-
+        // Synir bara dagsetningu - tekur ut klukkuna
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime SignupDate { get; set; }
+        // Notandi getur valid um themu numerud fra t.d. 1-3
         public int      Theme { get; set; }
+        // -------------------------------------------------------------------------------
 
-        // Adkomulykill (one-to-many) - listi af beidnum
+        // Adkomulyklar ------------------------------------------------------------------
+        // (one-to-many) - listi af beidnum
         public virtual ICollection<Request> Requests { get; set; }
-        // Adkomulykill (one-to-many) - listi af skram
+        // (one-to-many) - listi af skram
         public virtual ICollection<SubFile> SubFiles { get; set; }
-        // Adkomulykill (one-to-many) - listi af umsognum
+        // (one-to-many) - listi af umsognum
         public virtual ICollection<Comment> Comments { get; set; }
+        // -------------------------------------------------------------------------------
     }
 }
