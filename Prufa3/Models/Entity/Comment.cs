@@ -10,12 +10,12 @@ namespace Prufa3.Models.Entity
     {
         // Eigindi fyrir umsagnir --------------------------------------------------------
         [Key]       // Frumlykill
-        public int      CommentId { get; set; }
+        public int      iCommentId { get; set; }
         [Required]  // Ekki nullable
-        public string   CommentText { get; set; }
+        public string   sCommentText { get; set; }
         // Synir bara dagsetningu - tekur ut klukkuna
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
-        public DateTime CommentDate { get; set; }
+        public DateTime dCommentDate { get; set; }
         // -------------------------------------------------------------------------------
     }
 }

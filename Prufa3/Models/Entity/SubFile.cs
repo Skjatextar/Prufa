@@ -11,35 +11,35 @@ namespace Prufa3.Models.Entity
     {
         // Eigindi fyrir textaskrar ------------------------------------------------------
         [Key]       // Frumlykill
-        public int      SubFileId { get; set; }
+        public int      iSubFileId { get; set; }
         [Required]  // Ekki nullable
-        public string   Title { get; set; }
+        public string   sTitle { get; set; }
         // Tungumal thydingar
-        public string   SubLanguage { get; set; }
+        public string   sSubLanguage { get; set; }
         // Gerd textaskrar - kvikmynd/thattur
-        public string   SubType { get; set; }
+        public string   sSubType { get; set; }
         // Flokkur textaskrar - t.d. spennumynd/drama
-        public string   Genre { get; set; }
+        public string   sGenre { get; set; }
         // Synir bara dagsetningu - tekur ut klukkuna
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
-        public DateTime SubDate { get; set; }
+        public DateTime dSubDate { get; set; }
         // Slod ad mynd fyrir skrana
-        public string   Picture { get; set; }
+        public string   sPicture { get; set; }
         // Lysing a thydingu
-        public string   SubDescription { get; set; }
+        public string   sSubDescription { get; set; }
         // Slod ad textaskra
-        public string   FilePath { get; set; }
+        public string   sFilePath { get; set; }
         // Talning a hve oft hefur verid likad vid gaedi textaskrar
-        public int      UpVote { get; set; }
+        public int      iUpVote { get; set; }
         // -------------------------------------------------------------------------------
 
         // Adkomylyklar ------------------------------------------------------------------
         // (one-to-one) - tenging i notanda
-        public int ClientId { get; set; }
+        public int iClientId { get; set; }
         // (one-to-one) - tenging i notanda
-        public int RequestId { get; set; }
+        public int iRequestId { get; set; }
         // (one-to-many) - listi af umsognum
-        public virtual ICollection<Comment> Comments { get; set; }
+        public virtual ICollection<Comment> vComments { get; set; }
         // -------------------------------------------------------------------------------
     }
 }
