@@ -111,6 +111,7 @@ input[type="checkbox"].input-validation-error {
 /* ------- Home Index byrjar --------------------*/
 #center {
     margin:5px;
+    font-family:'Comic Sans MS';
 }
 .table-left {
     margin-left:75px;
@@ -122,38 +123,44 @@ input[type="checkbox"].input-validation-error {
    
     width:40%;
 }
+caption, h3 {
+      font-family:'Comic Sans MS';
+}
 /* ------- Home Index endar --------------------*/
 footer {
     padding-top: 8px;
-
+     margin: 0 75px;
 }
 
 #Footer-Left {
-    float: left;
+    float: right;
+   
 }
 
 #Footer-Right {
-    float: right;
+   
 }
 
-.Um-okkur > h2 {
+.Um-okkur, h2 {
     font-family: 'Lucida Console';
     margin-left: 0px;
     clear: both;
 }
 
-.Um-okkur > p {
-    margin-left: 50px;
+.Um-okkur, p {
+}
+    
+.Um-okkur, a {
+    
 }
 
-.Um-okkur > h3 {
-    margin-left: 50px;
+.Um-okkur, h3 {
+   
 }
 
-.Um-okkur > ol {
-    margin-left: 80px;
-}
+.Um-okkur, ol {
 
+}
 #um-list {
     float: right;
     width: 40%;

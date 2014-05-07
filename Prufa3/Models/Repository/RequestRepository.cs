@@ -9,7 +9,7 @@ namespace Prufa3.Models.Repository
 {
     public class RequestRepository : IRequestRepository
     {
-        private SubDataContext _context;
+        private SubDataContext_context;
 
         public IQueryable<Models.Entity.Request> GetRequests()
         {
