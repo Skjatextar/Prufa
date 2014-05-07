@@ -56,7 +56,7 @@ input[type="checkbox"].input-validation-error {
 
 #Leitbox{
     width: 1000px;
-    float: left;
+    float: right;
     margin-left: auto;
     margin-right: auto;
 }
@@ -75,4 +75,46 @@ input[type="checkbox"].input-validation-error {
     margin-left: auto;
     margin-right: auto;
     width: 86px;
+}
+footer {
+    padding-top: 80px;
+
+}
+
+#Footer-Left {
+    float: left;
+}
+
+#Footer-Right {
+    float: right;
+}
+
+.Um-okkur > h2 {
+    font-family: 'Lucida Console';
+    margin-left: 0px;
+    clear: both;
+}
+
+.Um-okkur > p {
+    margin-left: 50px;
+}
+
+.Um-okkur > h3 {
+    margin-left: 50px;
+}
+
+.Um-okkur > ol {
+    margin-left: 80px;
+}
+
+#um-list {
+    float: right;
+    width: 40%;
+
+}
+
+#um-text {
+    float: left;
+    width: 50%;
+    margin-left: 50px;
 }
