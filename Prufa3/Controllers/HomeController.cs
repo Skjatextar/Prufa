@@ -15,12 +15,6 @@ namespace Prufa3.Controllers
             return View(model);
         }
 
-        public ActionResult Search()
-        {
-            ViewBag.Message = "Beiðni-Leit";
-
-            return View();
-        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page...";

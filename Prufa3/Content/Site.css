@@ -1,7 +1,6 @@
 ﻿body {
-    padding-top: 15px;
-    padding-bottom: 20px;
-    background-color: #F8F8F8;
+    background-color:#F5F5F5;
+    height: 100%;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -41,38 +40,10 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
-#header {
-    text-align:center;
-    padding-left: 100px;
-    padding-top: 10px;
+#container {
+    
 }
-#head-left{
-    float:left;
-    padding:60px;
-}
-#login-facebook{
-    float:right;
-}
-
-#Leitbox{
-    width: 1000px;
-    float: left;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#Leitmenu{
-    float: left;
-}
-
-#Leitmidjad {
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
-}
-
-#Breadcrumb {
-    margin-left: auto;
-    margin-right: auto;
-    width: 86px;
+#center{
+    margin-left:100px;
+    padding-left: 55px;
 }

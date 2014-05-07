@@ -1,42 +1,62 @@
-﻿@{
-    ViewBag.Title = "Forsíðan";
+﻿@model IEnumerable<StudentApplication.Models.Student>
+
+@{
+    ViewBag.Title = "Home Page";
 }
+<form id="searchbox" action="">
+    <input id="search" type="text" placeholder="Type here">
+    <select name="Flokkar" id="Leitmenu">
+
+        <option value="valmynd">--Velja flokk--</option>
+        <option value="barnaefni">Barnaefni</option>
+        <option value="drama">Drama</option>
+        <option value="gaman">Gaman</option>
+        <option value="hrollvekja">Hrollvekja</option>
+        <option value="spenna">Spenna</option>
+
+    </select>
+    <input id="submit" type="submit" value="Search">
+</form>
 
 
-<html>
-<head>
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="Site.css" />
-</head>
-<body>
-    <div id="Leitmidjad">
-        <input id="Leitbox" type="text" name="leit" placeholder="Leita">
-        <form action="">
-            <select name="Flokkar" id="Leitmenu">
+<div id="center">
 
-                <option value="valmynd">--Velja flokk--</option>
-                <option value="barnaefni">Barnaefni</option>
-                <option value="drama">Drama</option>
-                <option value="gaman">Gaman</option>
-                <option value="hrollvekja">Hrollvekja</option>
-                <option value="spenna">Spenna</option>
-                
-            </select>
-        </form>
+    <table class="table-responsive table" style="width:400px; float:left; margin-right:25px;">
+        <caption>Vinsælast</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td> @Html.ActionLink(item.Name, "Edit", new { id = item.ID }) </td>
+                    <td> @item.year </td>
+                </tr>
+            }
 
-        <input type="submit"
-               value="Leita!"><p><br /></p>
+        </tbody>
+    </table>
+    <table class="table-responsive table" style="width:400px">
+        <caption>Nýjast</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td> @Html.ActionLink(item.Name, "Edit", new { id = item.ID }) </td>
+                    <td> @item.year </td>
+                </tr>
+            }
 
-    </div>
-    
-    <center>
-        <textarea rows="30" cols="50">
-            Nylegar skrar
-        </textarea>
-        <textarea rows="30" cols="50">
-            Vinsaelast
-        </textarea>
-    </center>
-
-</body>
-</html>
+        </tbody>
+    </table>
+</div>
