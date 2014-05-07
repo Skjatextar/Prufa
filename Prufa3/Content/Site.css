@@ -54,6 +54,8 @@ input[type="checkbox"].input-validation-error {
     float:right;
 }
 
+/* CSS fyrir forsíðu og beiðnaleitarsíðu / Index, Search  */
+
 #Leitbox{
     width: 1000px;
     float: right;
@@ -71,10 +73,50 @@ input[type="checkbox"].input-validation-error {
     width: 500px;
 }
 
-#Breadcrumb {
+#Leftbox{
+    margin-right: 30px;
+}
+
+#Search-boxes{
     margin-left: auto;
     margin-right: auto;
-    width: 86px;
+    width: 594px;
+}
+
+.Breadcrumb {
+    margin-left: auto;
+    margin-right: auto;
+    width: 206px;
+}
+
+
+
+/*  Fileform CSS / Senda inn skrá  */
+
+#upload  {
+    margin-left: 400px;
+    margin-right: 500px;
+    padding: 50px;
+    width: 500px;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.plass {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left:25px;
+
+}
+
+.skrafield{
+    width: 300px;
+    float: right;
+}
+
+#radioplass{
+    margin-left: 100px;
 }
 footer {
     padding-top: 80px;
