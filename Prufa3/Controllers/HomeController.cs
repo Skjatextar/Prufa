@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using StudentApplication.Models;
+using Prufa3.Models;
 namespace Prufa3.Controllers
 {
     public class HomeController : Controller
