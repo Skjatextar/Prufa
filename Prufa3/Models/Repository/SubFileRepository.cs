@@ -9,7 +9,7 @@ namespace Prufa3.Models.Repository
 {
     public class SubFileRepository : ISubFileRepository
     {
-        private SubDataContext _context;
+        private SubDataContext_context;
 
         public IQueryable<Models.Entity.SubFile> GetSubFiles()
         {
