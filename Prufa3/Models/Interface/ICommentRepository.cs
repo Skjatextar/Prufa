@@ -7,7 +7,7 @@ using Prufa3.Models.Entity;
 
 namespace Prufa3.Models.Interface
 {
-    interface ICommentRepository
+    public interface ICommentRepository
     {
         IQueryable<Comment> GetComments();
     }

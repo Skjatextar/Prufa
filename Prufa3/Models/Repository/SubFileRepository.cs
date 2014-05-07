@@ -1,45 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Data.Entity;
-using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Web;
-using Prufa3.Models.Entity;
+using Prufa3.App_Data.DataAccessLayer;
+using Prufa3.Models.Interface;
 
-namespace Prufa3.App_Data.DataAccessLayer
+namespace Prufa3.Models.Repository
 {
-    public class SubDataInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<SubDataContext>
+    public class SubFileRepository : ISubFileRepository
     {
-        protected override void Seed(SubDataContext context)
+        private SubDataContext _context;
+
+        public IQueryable<Models.Entity.SubFile> GetSubFiles()
         {
-            var clients = new List<Client>
-            {
-                new Client
-                {
-                    sUsername = "Guffi",
-                    sPass = "meistari",
-                    dSignupDate = DateTime.Parse("07-05-2014"),
-                    sEmail = "guffi@ru.is",
-                    iRanking = 1,
-                    iTheme = 1
-                } //,
-            };
-
-            clients.ForEach(c => context.Clients.Add(c));
-            context.SaveChanges();
-
-            var comments = new List<Comment>
-            {
-                new Comment
-                {
-                    iCommentId = 1,
-                    sCommentText = "Geðveikt",
-                    dCommentDate = DateTime.Parse("07-05-2014")
-                }
-            };
-
-            comments.ForEach(c => context.Comments.Add(c));
-            context.SaveChanges();
+            return _context.SubFiles;
         }
     }
 }
