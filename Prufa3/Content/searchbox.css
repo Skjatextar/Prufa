@@ -1,15 +1,14 @@
-﻿#searchbox
-{
+﻿#searchbox #Categories {
     background-color: #eaf8fc;
     background-image: linear-gradient(#fff, #d4e8ec);
     border-radius: 35px;    
     border-width: 1px;
     border-style: solid;
     border-color: #c4d9df #a4c3ca #83afb7;            
-    width: 500px;
-    height: 35px;
+    width: 480px;
+    height: 45px;
     padding: 10px;
-    margin: 100px auto 50px;
+    margin: 40px auto 50px;
     overflow: hidden; /* Clear floats */
 }
 #search, 
@@ -38,12 +37,8 @@
     border-width: 1px;
     border-style: solid;
     border-color: #7eba7c #578e57 #447d43;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
-                0 1px 0 rgba(255, 255, 255, 0.3) inset;
-   /* height: 35px;
-    margin: 0 0 0 10px;
-    padding: 0;
-    width: 90px;*/
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);             
+    height: 23px;
     cursor: pointer;
     font: bold 14px Arial, Helvetica;
     color: #23441e;    

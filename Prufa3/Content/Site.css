@@ -41,6 +41,7 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 #container {
+    
 }
 
 /* CSS fyrir forsíðu og beiðnaleitarsíðu / Index, Search  */
@@ -107,10 +108,23 @@ input[type="checkbox"].input-validation-error {
 #radioroom{
     margin-left: 100px;
 }
-
-
+/* ------- Home Index byrjar --------------------*/
+#center {
+    margin:5px;
+}
+.table-left {
+    margin-left:75px;
+    margin-right:55px;
+    float:left;
+    width:40%;
+}
+.table-right {
+   
+    width:40%;
+}
+/* ------- Home Index endar --------------------*/
 footer {
-    padding-top: 80px;
+    padding-top: 8px;
 
 }
 

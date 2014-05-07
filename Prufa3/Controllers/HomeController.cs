@@ -49,6 +49,8 @@ namespace Prufa3.Controllers
 
         public ActionResult Contact()
         {
+            SubDataContext db = new SubDataContext();
+
             ViewBag.Message = "Your contact page.";
 
             return View(db.Clients.ToList());
