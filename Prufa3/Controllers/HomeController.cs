@@ -6,10 +6,13 @@ using System.Web.Mvc;
 using Prufa3.App_Data.DataAccessLayer;
 using StudentApplication.Models;
 using Prufa3.Models;
+
 namespace Prufa3.Controllers
 {
     public class HomeController : Controller
     {
+        private SubDataContext db = new SubDataContext();
+
         public ActionResult Index()
         {
             StudentRepository repository = new StudentRepository();
@@ -43,6 +46,13 @@ namespace Prufa3.Controllers
             return View();
         }
 
-       
+        public ActionResult Contact()
+        {
+            SubDataContext db = new SubDataContext();
+
+            ViewBag.Message = "Your contact page.";
+
+            return View(db.Clients.ToList());
+        }
     }
 }

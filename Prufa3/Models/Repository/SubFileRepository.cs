@@ -8,6 +8,7 @@ using Prufa3.Models.Entity;
 
 namespace Prufa3.App_Data.DataAccessLayer
 {
+    /*á þetta ekki að vera SubFileRepository en ekki  SubDataInitializer*/
     public class SubDataInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<SubDataContext>
     {
         protected override void Seed(SubDataContext context)

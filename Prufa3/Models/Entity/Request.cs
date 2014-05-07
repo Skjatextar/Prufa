@@ -12,7 +12,7 @@ namespace Prufa3.Models.Entity
         [Key]       // Frumlykill
         public int      iRequestId { get; set; }
         [Required]  // Ekki nullable
-        public string   sUsername { get; set; }
+        public string   sRequesterUsername { get; set; }
         [Required]  // Ekki nullable
         public string   sTitle { get; set; }
         // Tungumal sem a ad thyda i
@@ -38,7 +38,7 @@ namespace Prufa3.Models.Entity
         // (one-to-many) - listi af umsognum
         public virtual  ICollection<Comment> vComments { get; set; }
         // (one-to-one) - tenging i notanda
-        public string   sClientId { get; set; }
+        public string   sUsername { get; set; }
         // -------------------------------------------------------------------------------
     }
 }
