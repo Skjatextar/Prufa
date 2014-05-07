@@ -8,12 +8,14 @@ namespace Prufa3.Models.Entity
 {
     public class Comment
     {
-        [Key]
+        // Eigindi fyrir umsagnir --------------------------------------------------------
+        [Key]       // Frumlykill
         public int      CommentId { get; set; }
-        [Required]
+        [Required]  // Ekki nullable
         public string   CommentText { get; set; }
-
+        // Synir bara dagsetningu - tekur ut klukkuna
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime CommentDate { get; set; }
+        // -------------------------------------------------------------------------------
     }
 }
