@@ -12,10 +12,12 @@ namespace Prufa3.Models.Entity
         [Key]       // Frumlykill
         public int      iCommentId { get; set; }
         [Required]  // Ekki nullable
+        public string   sCommenterUsername { get; set; }
+        [Required]  // Ekki nullable
         public string   sCommentText { get; set; }
         // Synir bara dagsetningu - tekur ut klukkuna
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
-        public DateTime dCommentDate { get; set; }
+        public DateTime? dCommentDate { get; set; }
         // -------------------------------------------------------------------------------
     }
 }

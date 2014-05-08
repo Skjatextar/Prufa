@@ -22,7 +22,7 @@ namespace Prufa3.Models.Entity
         public string   sGenre { get; set; }
         // Synir bara dagsetningu - tekur ut klukkuna
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
-        public DateTime dSubDate { get; set; }
+        public DateTime? dSubDate { get; set; }
         // Slod ad mynd fyrir skrana
         public string   sPicture { get; set; }
         // Lysing a thydingu
@@ -30,14 +30,14 @@ namespace Prufa3.Models.Entity
         // Slod ad textaskra
         public string   sFilePath { get; set; }
         // Talning a hve oft hefur verid likad vid gaedi textaskrar
-        public int      iUpVote { get; set; }
+        public int?      iUpVote { get; set; }
         // -------------------------------------------------------------------------------
 
         // Adkomylyklar ------------------------------------------------------------------
         // (one-to-one) - tenging i notanda
-        public int iClientId { get; set; }
+        public string   sUsername { get; set; }
         // (one-to-one) - tenging i notanda
-        public int iRequestId { get; set; }
+        public int      iRequestId { get; set; }
         // (one-to-many) - listi af umsognum
         public virtual ICollection<Comment> vComments { get; set; }
         // -------------------------------------------------------------------------------
