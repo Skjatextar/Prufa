@@ -126,10 +126,12 @@ input[type="checkbox"].input-validation-error {
 caption, h3 {
       font-family:'Comic Sans MS';
 }
-/* ------- Home Index endar --------------------*/
+
+
 footer {
     padding-top: 8px;
-     margin: 0 75px;
+    margin: 0 75px;
+    bottom:0px;
 }
 
 #Footer-Left {
@@ -140,35 +142,23 @@ footer {
 #Footer-Right {
    
 }
-
-.Um-okkur, h2 {
+/* ------- Home Index endar --------------------*/
+#About-list { 
+    width: 37%;
     font-family: 'Lucida Console';
-    margin-left: 0px;
-    clear: both;
-}
-
-.Um-okkur, p {
-}
-    
-.Um-okkur, a {
-    
-}
-
-.Um-okkur, h3 {
+    float: right;
+     margin: 25px 5px; 
    
 }
 
-.Um-okkur, ol {
-
-}
-#um-list {
-    float: right;
-    width: 40%;
-
-}
-
-#um-text {
-    float: left;
+#About-text { 
     width: 50%;
-    margin-left: 50px;
+    font-family: 'Lucida Console';
+    margin:45px;
+   
+   
 }
+#About-text,dl {
+    padding-bottom:25px;
+}
+
