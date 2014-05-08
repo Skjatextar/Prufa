@@ -63,7 +63,14 @@ namespace Prufa3.Controllers
         }
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page...";
+            ViewBag.Message = "Um okkur";
+
+            return View();
+        }
+
+        public ActionResult Instructions()
+        {
+            ViewBag.Message = "Leiðbeiningar";
 
             return View();
         }
