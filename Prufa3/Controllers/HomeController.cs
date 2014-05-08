@@ -44,16 +44,23 @@ namespace Prufa3.Controllers
         }
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page...";
+            ViewBag.Message = "Um okkur";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Instructions()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Leiðbeiningar";
 
-            return View(db.Clients.ToList());
+            return View();
+        }
+
+        public ActionResult UserSettings()
+        {
+            ViewBag.Message = "Neotendastillingar";
+
+            return View();
         }
     }
 }
