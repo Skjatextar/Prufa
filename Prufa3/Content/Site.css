@@ -171,3 +171,21 @@ footer {
     width: 50%;
     margin-left: 50px;
 }
+
+.makesrtlist {
+    margin-top:20px;
+    width:600px;
+    float:left;
+    
+}
+
+#example {
+    
+    float:right;
+    
+}
+
+#makesrt {
+    margin-top: 100px;
+      overflow:hidden; 
+}
