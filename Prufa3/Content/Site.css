@@ -120,22 +120,24 @@ input[type="checkbox"].input-validation-error {
     width:40%;
 }
 .table-right {
-
+   
     width:40%;
 }
 caption, h3 {
       font-family:'Comic Sans MS';
 }
-/* ------- Home Index endar --------------------*/
+
+
 footer {
     padding-top: 8px;
      margin: 0 75px;
+    bottom:0px;
 }
 
 #footer-left {
     float: left;
 }
-
+   
 #footer-right {
     float: right;
 }
@@ -144,29 +146,33 @@ footer {
     margin-top: 10px;
 }
 
-.about > h2 {
+.Um-okkur, h2 {
+    font-family: 'Lucida Console';
+    margin-left: 0px;
     clear: both;
 }
 
-.about > p {
-    margin-left: 50px;
+.Um-okkur, p {
+}
+    
+.Um-okkur, a {
+    
 }
 
-.about > h3 {
-    margin-left: 50px;
+.Um-okkur, h3 {
+   
 }
 
-.about > ol {
-    margin-left: 80px;
-}
+.Um-okkur, ol {
 
-#about-list {
+}
+#um-list {
     float: right;
     width: 40%;
 
 }
 
-#about-text {
+#um-text {
     float: left;
     width: 50%;
     margin-left: 50px;
