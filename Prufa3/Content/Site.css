@@ -120,7 +120,7 @@ input[type="checkbox"].input-validation-error {
     width:40%;
 }
 .table-right {
-   
+
     width:40%;
 }
 caption, h3 {
@@ -132,42 +132,41 @@ footer {
      margin: 0 75px;
 }
 
-#Footer-Left {
+#footer-left {
+    float: left;
+}
+
+#footer-right {
     float: right;
-   
 }
 
-#Footer-Right {
-   
+.about {
+    margin-top: 10px;
 }
 
-.Um-okkur, h2 {
-    font-family: 'Lucida Console';
-    margin-left: 0px;
+.about > h2 {
     clear: both;
 }
 
-.Um-okkur, p {
-}
-    
-.Um-okkur, a {
-    
+.about > p {
+    margin-left: 50px;
 }
 
-.Um-okkur, h3 {
-   
+.about > h3 {
+    margin-left: 50px;
 }
 
-.Um-okkur, ol {
-
+.about > ol {
+    margin-left: 80px;
 }
-#um-list {
+
+#about-list {
     float: right;
     width: 40%;
 
 }
 
-#um-text {
+#about-text {
     float: left;
     width: 50%;
     margin-left: 50px;
