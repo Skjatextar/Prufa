@@ -132,39 +132,39 @@ footer {
 
 }
 
-#Footer-Left {
+#footer-feft {
     float: left;
 }
 
-#Footer-Right {
+#footer-fight {
     float: right;
 }
 
-.Um-okkur > h2 {
+.about > h2 {
     font-family: 'Lucida Console';
     margin-left: 0px;
     clear: both;
 }
 
-.Um-okkur > p {
+.about > p {
     margin-left: 50px;
 }
 
-.Um-okkur > h3 {
+.about > h3 {
     margin-left: 50px;
 }
 
-.Um-okkur > ol {
+.about > ol {
     margin-left: 80px;
 }
 
-#um-list {
+#about-list {
     float: right;
     width: 40%;
 
 }
 
-#um-text {
+#about-text {
     float: left;
     width: 50%;
     margin-left: 50px;
