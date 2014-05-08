@@ -26,5 +26,7 @@ namespace Prufa3.App_Data.DataAccessLayer
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
+
+        public System.Data.Entity.DbSet<StudentApplication.Models.Student> Students { get; set; }
     }
 }

@@ -22,8 +22,9 @@ namespace Prufa3.Controllers
 
         //public ActionResult Index()
         //{
-        //    //var result = (from s in _repo.GetSubFile()
-        //    //    orderby s.SubDate descending) 
+        //    var result = (from s in _repo.GetSubFiles()
+        //        //orderby s.sUsername descending
+        //        select s);
 
         //    return View(result);
         //}

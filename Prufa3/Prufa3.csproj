@@ -199,11 +199,11 @@
     <Compile Include="Models\Students.cs" />
     <Compile Include="Models\StudentsRepository.cs" />
     <Compile Include="App_Data\DataAccessLayer\SubDataInitializer.cs" />
-    <Compile Include="Models\ViewModel\CommentView.cs" />
-    <Compile Include="Models\ViewModel\RequestSearch.cs" />
-    <Compile Include="Models\ViewModel\RequestView.cs" />
-    <Compile Include="Models\ViewModel\SettingsView.cs" />
-    <Compile Include="Models\ViewModel\SubFileView.cs" />
+    <Compile Include="Models\ViewModel\CommentViewModel.cs" />
+    <Compile Include="Models\ViewModel\RequestSearchModel.cs" />
+    <Compile Include="Models\ViewModel\RequestViewModel.cs" />
+    <Compile Include="Models\ViewModel\SettingsViewModel.cs" />
+    <Compile Include="Models\ViewModel\SubFileViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -263,13 +263,13 @@
     <Content Include="Views\Home\FileInfo.cshtml" />
     <Content Include="Views\Home\SignInn.cshtml" />
     <Content Include="Views\Home\SignUp.cshtml" />
+    <Content Include="Views\Home\info.cshtml" />
     <Content Include="Views\Home\ViewForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Start\App_LocalResources\" />
     <Folder Include="Views\Comment\" />
     <Folder Include="Views\Request\" />
-    <Folder Include="Views\SubFile\" />
     <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
