@@ -45,8 +45,8 @@ namespace Prufa3.Controllers
         public ActionResult FileForm()
         {
             ViewBag.Message = "Senda inn skrá";
-
-            return View(db.Clients.ToList());
+            return View();
+            //return View(db.Clients.ToList());
         }
 
         public ActionResult NewForm()
