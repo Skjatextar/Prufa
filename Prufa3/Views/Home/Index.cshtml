@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Home Page";
 }
+
 <form id="searchbox" action="">
     <input id="search" type="text" placeholder="Leita">
     <select name="Categories" id="Categories">
@@ -50,7 +51,7 @@
             @foreach (var item in Model)
             {
                 <tr>
-                    <td> @Html.ActionLink(item.Name, "Edit", new { id = item.ID }) </td>
+                    <td> @Html.ActionLink(item.Name, "info", new { id = item.ID }) </td>
                     <td> @item.year </td>
                 </tr>
             }

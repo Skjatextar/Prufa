@@ -250,6 +250,7 @@
     <Content Include="Views\Home\SignInn.cshtml" />
     <Content Include="Views\Home\SignUp.cshtml" />
     <Content Include="Views\Home\info.cshtml" />
+    <Content Include="Views\Home\ViewForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Start\App_LocalResources\" />

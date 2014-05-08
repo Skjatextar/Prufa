@@ -29,15 +29,16 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Heim", "Index", "Home")</li>
-                    <li>@Html.ActionLink("UM okkur", "About", "Home")</li>
-                    <li>@Html.ActionLink("Leiðbeiningar", "Index", "Home")</li>
                     <li>@Html.ActionLink("Senda inn skrá", "FileForm", "Home")</li>
                     <li>@Html.ActionLink("Skoða Beiðnir", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Gagnaleit", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Upphala", "Index", "Home")</li>@*Prufa*@
+                    <li>@Html.ActionLink("UM okkur", "About", "Home")</li>
+                    <li>@Html.ActionLink("Leiðbeiningar", "Index", "Home")</li>
+                   @* <li>@Html.ActionLink("Gagnaleit", "Index", "Home")</li>
+                      <li>@Html.ActionLink("Upphala", "Index", "Home")</li> þetta þarf ekki *@
                     <li>@Html.ActionLink("Persónustillingar", "Contact", "Home")</li>
+                     
                 </ul>
-                    @Html.Partial("_LoginPartial")
+                   @Html.Partial("_LoginPartial")
                 </div>
             </div>
         </div>
