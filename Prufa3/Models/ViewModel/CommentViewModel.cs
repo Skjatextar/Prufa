@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Prufa3.App_Data.DataAccessLayer;
-using Prufa3.Models.Entity;
 
 namespace Prufa3.Models.ViewModel
 {
-    public class SubFileView
+    public class CommentViewModel
     {
         // Tennging i gagnagrunn - breytist thegar repos. koma inn
         private SubDataContext db = new SubDataContext();

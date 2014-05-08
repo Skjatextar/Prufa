@@ -6,7 +6,7 @@ using Prufa3.App_Data.DataAccessLayer;
 
 namespace Prufa3.Models.ViewModel
 {
-    public class RequestSearch
+    public class RequestSearchModel
     {
         // Tennging i gagnagrunn - breytist thegar repos. koma inn
         private SubDataContext db = new SubDataContext();

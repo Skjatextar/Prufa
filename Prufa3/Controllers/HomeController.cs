@@ -46,13 +46,19 @@ namespace Prufa3.Controllers
         {
             ViewBag.Message = "Senda inn skrá";
 
-            return View();
+            return View(db.Clients.ToList());
         }
 
         public ActionResult NewForm()
         {
             ViewBag.Message = "Ný beiðni";
 
+            return View();
+        }
+
+        public ActionResult ViewForm()
+        {
+            ViewBag.Message = "Skoða beiðni";
             return View();
         }
         public ActionResult About()
@@ -69,11 +75,11 @@ namespace Prufa3.Controllers
             return View();
         }
 
-        public ActionResult UserSettings()
-        {
-            ViewBag.Message = "Neotendastillingar";
+        //public ActionResult Contact()
+        //{
+        //    ViewBag.Message = "Your contact page.";
 
-            return View();
-        }
+        //    return View(db.Clients.ToList());
+        //}
     }
 }
