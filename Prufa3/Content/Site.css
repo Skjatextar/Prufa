@@ -79,6 +79,7 @@ input[type="checkbox"].input-validation-error {
     margin-right: auto;
     width: 206px;
     height:auto;
+    margin-top:25px;
 }
 
 
@@ -128,48 +129,52 @@ input[type="checkbox"].input-validation-error {
 caption, h3 {
       font-family:'Comic Sans MS';
 }
-
+/*-------footer-----*/
 footer {
-    padding-top: 80px;
-
+    padding-top: 30px;
 }
 
-#footer-feft {
+#footer-left {
     float: left;
 }
 
-#footer-fight {
+#footer-right {
     float: right;
 }
+/*-------about--------*/
+.about {
+    min-width: 740px;
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.about > h2 {
-    font-family: 'Lucida Console';
+.about h2 {
     margin-left: 0px;
     clear: both;
 }
 
-.about > p {
+.about p {
     margin-left: 50px;
 }
 
-.about > h3 {
+.about h3 {
     margin-left: 50px;
 }
 
-.about > ol {
+.about ol {
     margin-left: 80px;
 }
 
 #about-list {
     float: right;
-    width: 40%;
-
+    width: 30%;
+    margin-top: 80px;
 }
 
 #about-text {
     float: left;
-    width: 50%;
-    margin-left: 50px;
+    width: 65%;
 }
 
 .makesrtlist {
