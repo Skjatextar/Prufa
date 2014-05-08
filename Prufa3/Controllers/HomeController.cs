@@ -23,6 +23,19 @@ namespace Prufa3.Controllers
             return View(model);
         }
 
+        [HttpGet]
+        public ActionResult info(int? id)
+        {
+            int realid = id.Value;
+            StudentRepository repository = new StudentRepository();
+            var model = repository.GetStudentById(realid);
+            if (id.HasValue)
+            {
+                return View(model);
+            }
+            return View("Notfound");
+        }
+
         public ActionResult Search()
         {
             ViewBag.Message = "Beiðni Leit";
