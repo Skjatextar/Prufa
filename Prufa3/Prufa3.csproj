@@ -156,6 +156,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Data\DataAccessLayer\SubDataContext.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -165,10 +166,22 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RequestController.cs" />
     <Compile Include="Controllers\SubFileController.cs" />
-    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201405080031449_product.cs" />
+    <Compile Include="Migrations\201405080031449_product.Designer.cs">
+      <DependentUpon>201405080031449_product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201405080116162_product1.cs" />
+    <Compile Include="Migrations\201405080116162_product1.Designer.cs">
+      <DependentUpon>201405080116162_product1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201405080140575_nullable.cs" />
+    <Compile Include="Migrations\201405080140575_nullable.Designer.cs">
+      <DependentUpon>201405080140575_nullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Entity\Client.cs" />
     <Compile Include="Models\Entity\Comment.cs" />
@@ -185,6 +198,12 @@
     <Compile Include="Models\Repository\SubFileRepository.cs" />
     <Compile Include="Models\Students.cs" />
     <Compile Include="Models\StudentsRepository.cs" />
+    <Compile Include="App_Data\DataAccessLayer\SubDataInitializer.cs" />
+    <Compile Include="Models\ViewModel\CommentView.cs" />
+    <Compile Include="Models\ViewModel\RequestSearch.cs" />
+    <Compile Include="Models\ViewModel\RequestView.cs" />
+    <Compile Include="Models\ViewModel\SettingsView.cs" />
+    <Compile Include="Models\ViewModel\SubFileView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -223,7 +242,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
@@ -239,9 +257,14 @@
     <Content Include="Views\Home\Search.cshtml" />
     <Content Include="Views\Home\FileForm.cshtml" />
     <Content Include="Views\Home\NewForm.cshtml" />
+    <Content Include="Views\Home\UserSettings.cshtml" />
+    <Content Include="Views\Home\NewFormFile.cshtml" />
+    <Content Include="Views\Home\Instructions.cshtml" />
+    <Content Include="Views\Home\FileInfo.cshtml" />
+    <Content Include="Views\Home\SignInn.cshtml" />
+    <Content Include="Views\Home\SignUp.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="App_Start\App_LocalResources\" />
     <Folder Include="Views\Comment\" />
     <Folder Include="Views\Request\" />
@@ -254,6 +277,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201405080031449_product.resx">
+      <DependentUpon>201405080031449_product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201405080116162_product1.resx">
+      <DependentUpon>201405080116162_product1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201405080140575_nullable.resx">
+      <DependentUpon>201405080140575_nullable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

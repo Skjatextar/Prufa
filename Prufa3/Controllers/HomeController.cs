@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Prufa3.App_Data.DataAccessLayer;
+using Prufa3.Models.Interface;
+using Prufa3.Models.Repository;
 using StudentApplication.Models;
 using Prufa3.Models;
+
 namespace Prufa3.Controllers
 {
     public class HomeController : Controller
     {
+        // Tennging i gagnagrunn - breytist thegar repos. koma inn
+        private SubDataContext db = new SubDataContext();
+
         public ActionResult Index()
         {
             StudentRepository repository = new StudentRepository();
@@ -19,7 +26,6 @@ namespace Prufa3.Controllers
         public ActionResult Search()
         {
             ViewBag.Message = "Beiðni Leit";
-
             return View();
         }
 
@@ -47,7 +53,7 @@ namespace Prufa3.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            return View(db.Clients.ToList());
         }
     }
 }

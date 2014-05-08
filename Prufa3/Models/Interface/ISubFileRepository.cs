@@ -9,6 +9,6 @@ namespace Prufa3.Models.Interface
 {
     public interface ISubFileRepository
     {
-        //IQueryable<SubFile> 
+        IQueryable<SubFile> GetSubFiles();
     }
 }

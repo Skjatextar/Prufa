@@ -4,25 +4,23 @@
     ViewBag.Title = "Home Page";
 }
 <form id="searchbox" action="">
-    <input id="search" type="text" placeholder="Type here">
-            <select name="Flokkar" id="Leitmenu">
-
-                <option value="valmynd">--Velja flokk--</option>
-                <option value="barnaefni">Barnaefni</option>
-                <option value="drama">Drama</option>
-                <option value="gaman">Gaman</option>
-                <option value="hrollvekja">Hrollvekja</option>
-                <option value="spenna">Spenna</option>
-                
-            </select>
+    <input id="search" type="text" placeholder="Leita">
+    <select name="Categories" id="Categories">
+        <option value="valmynd">--Velja flokk--</option>
+        <option value="barnaefni">Barnaefni</option>
+        <option value="drama">Drama</option>
+        <option value="gaman">Gaman</option>
+        <option value="hrollvekja">Hrollvekja</option>
+        <option value="spenna">Spenna</option>
+    </select>
     <input id="submit" type="submit" value="Search">
-        </form>
+</form>
 
 
 <div id="center">
 
-    <table class="table-responsive table" style="width:400px; float:left; margin-right:25px;">
-        <caption>Vinsælast</caption>
+    <table class="table-responsive table table-bordered table-hover table-left">
+        <caption><h3>Vinsælast</h3></caption>
         <thead>
             <tr>
                 <th>Name</th>
@@ -37,11 +35,11 @@
                     <td> @item.year </td>
                 </tr>
             }
-    
+
         </tbody>
     </table>
-    <table class="table-responsive table" style="width:400px">
-        <caption>Nýjast</caption>
+    <table class="table-responsive table table-bordered table-hover table-right">
+        <caption><h3>Nýjast</h3></caption>
         <thead>
             <tr>
                 <th>Name</th>

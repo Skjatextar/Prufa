@@ -29,11 +29,12 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Heim", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Beiðni", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Gagnaleit", "Index", "Home")</li>
-                    <li>@Html.ActionLink("UM okkur", "Index", "Home")</li>
+                    <li>@Html.ActionLink("UM okkur", "About", "Home")</li>
                     <li>@Html.ActionLink("Leiðbeiningar", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Upphala", "About", "Home")</li>
+                    <li>@Html.ActionLink("Senda inn skrá", "FileForm", "Home")</li>
+                    <li>@Html.ActionLink("Skoða Beiðnir", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Gagnaleit", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Upphala", "Index", "Home")</li>
                     <li>@Html.ActionLink("Persónustillingar", "Contact", "Home")</li>
                 </ul>
                     @Html.Partial("_LoginPartial")
@@ -44,16 +45,16 @@
 
     <div id="container" class="container body-content">
         @RenderBody()
+        <hr />
         <footer>
-            <div id="Footer-Left">
-                <p>Við mælum með <a href="http://www.videolan.org/vlc/index.html">VLC</a>
+            <div id="footer-left">
+                <p>Við mælum með <a href="http://www.videolan.org/vlc/index.html">VLC</a></p>
             </div>
             
             <div id="footer-right">
-
                 <p>Með því að nota þessa síðu samþykkir þú þessa skilmála (href)</p>
-
             </div>
+
         </footer>
     </div>
 

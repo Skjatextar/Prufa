@@ -41,6 +41,7 @@ input[type="checkbox"].input-validation-error {
     display: none;
 }
 #container {
+    
 }
 
 /* CSS fyrir forsíðu og beiðnaleitarsíðu / Index, Search  */
@@ -107,46 +108,65 @@ input[type="checkbox"].input-validation-error {
 #radioroom{
     margin-left: 100px;
 }
+/* ------- Home Index byrjar --------------------*/
+#center {
+    margin:5px;
+    font-family:'Comic Sans MS';
+}
+.table-left {
+    margin-left:75px;
+    margin-right:55px;
+    float:left;
+    width:40%;
+}
+.table-right {
 
-
+    width:40%;
+}
+caption, h3 {
+      font-family:'Comic Sans MS';
+}
+/* ------- Home Index endar --------------------*/
 footer {
-    padding-top: 80px;
-
+    padding-top: 8px;
+     margin: 0 75px;
 }
 
-#Footer-Left {
+#footer-left {
     float: left;
 }
 
-#Footer-Right {
+#footer-right {
     float: right;
 }
 
-.Um-okkur > h2 {
-    font-family: 'Lucida Console';
-    margin-left: 0px;
+.about {
+    margin-top: 10px;
+}
+
+.about > h2 {
     clear: both;
 }
 
-.Um-okkur > p {
+.about > p {
     margin-left: 50px;
 }
 
-.Um-okkur > h3 {
+.about > h3 {
     margin-left: 50px;
 }
 
-.Um-okkur > ol {
+.about > ol {
     margin-left: 80px;
 }
 
-#um-list {
+#about-list {
     float: right;
     width: 40%;
 
 }
 
-#um-text {
+#about-text {
     float: left;
     width: 50%;
     margin-left: 50px;

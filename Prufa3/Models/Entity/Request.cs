@@ -10,35 +10,35 @@ namespace Prufa3.Models.Entity
     {
         // Eigindi fyrir beidnir ---------------------------------------------------------
         [Key]       // Frumlykill
-        public int      RequestId { get; set; }
+        public int      iRequestId { get; set; }
         [Required]  // Ekki nullable
-        public string   Username { get; set; }
+        public string   sRequesterUsername { get; set; }
         [Required]  // Ekki nullable
-        public string   Title { get; set; }
+        public string   sTitle { get; set; }
         // Tungumal sem a ad thyda i
-        public string   LanguageTo { get; set; }
+        public string   sLanguageTo { get; set; }
         // Tungumal sem a ad thyda fra
-        public string   LanguageFrom { get; set; }
+        public string   sLanguageFrom { get; set; }
         // Gerd textaskrar - kvikmynd/thattur
-        public string   SubType { get; set; }
+        public string   sSubType { get; set; }
         // Talning a hve oft hefur verid likad vid beidni (thrystingur a thydingu)
-        public int      UpVote { get; set; }
+        public int?      iUpVote { get; set; }
         // Synir bara dagsetningu - tekur ut klukkuna
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
-        public DateTime RequestDate { get; set; }
+        public DateTime? dRequestDate { get; set; }
         // Slod ad mynd fyrir skrana
-        public string   Picture { get; set; }
+        public string   sPicture { get; set; }
         // Lysing/texti fyrir beidni
-        public string   RequestDescription { get; set; }
+        public string   sRequestDescription { get; set; }
         // -------------------------------------------------------------------------------
 
         // Adkomulyklar ------------------------------------------------------------------
         // (one-to-one) - tenging i textaskra
-        public int      SubFileId { get; set; }
+        public int      iSubFileId { get; set; }
         // (one-to-many) - listi af umsognum
-        public virtual  ICollection<Comment> Comments { get; set; }
+        public virtual  ICollection<Comment> vComments { get; set; }
         // (one-to-one) - tenging i notanda
-        public string   ClientId { get; set; }
+        public string   sUsername { get; set; }
         // -------------------------------------------------------------------------------
     }
 }

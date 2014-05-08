@@ -2,28 +2,24 @@
     ViewBag.Title = "Beiðni-Leit";
 }
 
-
-<html>
-<head>
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="Site.css" />
-</head>
-<body>
-
+   <!-- 
     <div class="Breadcrumb">
         <p><a href="/Home/">Heim</a> > Beiðni</p>
-
     </div>
+       -->
 
-    <div id="SearchCentered">
-        <input id="Leitbox" type="text" name="search" placeholder="Leita">
-        
-        <input type="submit"
-               value="Leita">
-        <input type="submit"
-               value="Ný beiðni"><p><br /></p>
-
-    </div>
+<form id="searchbox" action="">
+    <input id="search" type="text" placeholder="Leita">
+    <select name="Categories" id="Categories">
+        <option value="valmynd">--Velja flokk--</option>
+        <option value="barnaefni">Barnaefni</option>
+        <option value="drama">Drama</option>
+        <option value="gaman">Gaman</option>
+        <option value="hrollvekja">Hrollvekja</option>
+        <option value="spenna">Spenna</option>
+    </select>
+    <input id="submit" type="submit" value="Search">
+</form>
 
     <center>
         <textarea rows="30" cols="50">
@@ -33,6 +29,3 @@
             Vinsaelast
         </textarea>
     </center>
-
-</body>
-</html>
