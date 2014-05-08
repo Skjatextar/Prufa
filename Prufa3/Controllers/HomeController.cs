@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Prufa3.App_Data.DataAccessLayer;
+using Prufa3.Models.Interface;
+using Prufa3.Models.Repository;
 using StudentApplication.Models;
 using Prufa3.Models;
 
@@ -11,6 +13,7 @@ namespace Prufa3.Controllers
 {
     public class HomeController : Controller
     {
+        // Tennging i gagnagrunn - breytist thegar repos. koma inn
         private SubDataContext db = new SubDataContext();
 
         public ActionResult Index()
@@ -48,8 +51,6 @@ namespace Prufa3.Controllers
 
         public ActionResult Contact()
         {
-            SubDataContext db = new SubDataContext();
-
             ViewBag.Message = "Your contact page.";
 
             return View(db.Clients.ToList());

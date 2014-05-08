@@ -5,12 +5,12 @@
         <th>
             @Html.DisplayNameFor(model => model.sUsername)
         </th>
-        @*<th>
-            @Html.DisplayNameFor(model => model.sTitle)
-        </th>*@
-        @*<th>
-            @Html.DisplayNameFor(model => model.sRequestDescription)
-        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.sPass)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sEmail)
+        </th>
     </tr>
 
     @foreach (var item in Model)
@@ -19,12 +19,12 @@
             <td>
                 @Html.DisplayFor(modelItem => item.sUsername)
             </td>
-            @*<td>
-                @Html.DisplayFor(modelItem => item.sTitle)
-            </td>*@
-            @*<td>
-                @Html.DisplayFor(modelItem => item.sRequestDescription)
-            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.sPass)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sEmail)
+            </td>
         </tr>
     }
 </table>

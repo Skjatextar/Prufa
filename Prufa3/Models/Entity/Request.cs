@@ -22,10 +22,10 @@ namespace Prufa3.Models.Entity
         // Gerd textaskrar - kvikmynd/thattur
         public string   sSubType { get; set; }
         // Talning a hve oft hefur verid likad vid beidni (thrystingur a thydingu)
-        public int      iUpVote { get; set; }
+        public int?      iUpVote { get; set; }
         // Synir bara dagsetningu - tekur ut klukkuna
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd/MM/yyyy}")]
-        public DateTime dRequestDate { get; set; }
+        public DateTime? dRequestDate { get; set; }
         // Slod ad mynd fyrir skrana
         public string   sPicture { get; set; }
         // Lysing/texti fyrir beidni
