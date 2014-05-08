@@ -130,35 +130,50 @@ caption, h3 {
 
 footer {
     padding-top: 8px;
-    margin: 0 75px;
+     margin: 0 75px;
     bottom:0px;
 }
 
-#Footer-Left {
-    float: right;
+#footer-left {
+    float: left;
+}
    
+#footer-right {
+    float: right;
 }
 
-#Footer-Right {
-   
+.about {
+    margin-top: 10px;
 }
-/* ------- Home Index endar --------------------*/
-#About-list { 
-    width: 37%;
+
+.Um-okkur, h2 {
     font-family: 'Lucida Console';
-    float: right;
-     margin: 25px 5px; 
+    margin-left: 0px;
+    clear: both;
+}
+
+.Um-okkur, p {
+}
+    
+.Um-okkur, a {
+    
+}
+
+.Um-okkur, h3 {
    
 }
 
-#About-text { 
+.Um-okkur, ol {
+
+}
+#um-list {
+    float: right;
+    width: 40%;
+
+}
+
+#um-text {
+    float: left;
     width: 50%;
-    font-family: 'Lucida Console';
-    margin:45px;
-   
-   
+    margin-left: 50px;
 }
-#About-text,dl {
-    padding-bottom:25px;
-}
-

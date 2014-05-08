@@ -199,6 +199,11 @@
     <Compile Include="Models\Students.cs" />
     <Compile Include="Models\StudentsRepository.cs" />
     <Compile Include="App_Data\DataAccessLayer\SubDataInitializer.cs" />
+    <Compile Include="Models\ViewModel\CommentView.cs" />
+    <Compile Include="Models\ViewModel\RequestSearch.cs" />
+    <Compile Include="Models\ViewModel\RequestView.cs" />
+    <Compile Include="Models\ViewModel\SettingsView.cs" />
+    <Compile Include="Models\ViewModel\SubFileView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -237,7 +242,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
@@ -253,6 +257,13 @@
     <Content Include="Views\Home\Search.cshtml" />
     <Content Include="Views\Home\FileForm.cshtml" />
     <Content Include="Views\Home\NewForm.cshtml" />
+    <Content Include="Views\Home\UserSettings.cshtml" />
+    <Content Include="Views\Home\NewFormFile.cshtml" />
+    <Content Include="Views\Home\Instructions.cshtml" />
+    <Content Include="Views\Home\FileInfo.cshtml" />
+    <Content Include="Views\Home\SignInn.cshtml" />
+    <Content Include="Views\Home\SignUp.cshtml" />
+    <Content Include="Views\Home\info.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Start\App_LocalResources\" />
