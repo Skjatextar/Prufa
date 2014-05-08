@@ -78,6 +78,7 @@ input[type="checkbox"].input-validation-error {
     margin-left: auto;
     margin-right: auto;
     width: 206px;
+    height:auto;
 }
 
 
@@ -128,52 +129,44 @@ caption, h3 {
       font-family:'Comic Sans MS';
 }
 
-
 footer {
-    padding-top: 8px;
-     margin: 0 75px;
-    bottom:0px;
+    padding-top: 80px;
+
 }
 
-#footer-left {
+#footer-feft {
     float: left;
 }
-   
-#footer-right {
+
+#footer-fight {
     float: right;
 }
 
-.about {
-    margin-top: 10px;
-}
-
-.Um-okkur, h2 {
+.about > h2 {
     font-family: 'Lucida Console';
     margin-left: 0px;
     clear: both;
 }
 
-.Um-okkur, p {
-}
-    
-.Um-okkur, a {
-    
+.about > p {
+    margin-left: 50px;
 }
 
-.Um-okkur, h3 {
-   
+.about > h3 {
+    margin-left: 50px;
 }
 
-.Um-okkur, ol {
-
+.about > ol {
+    margin-left: 80px;
 }
-#um-list {
+
+#about-list {
     float: right;
     width: 40%;
 
 }
 
-#um-text {
+#about-text {
     float: left;
     width: 50%;
     margin-left: 50px;
