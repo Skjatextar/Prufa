@@ -33,7 +33,7 @@ namespace Prufa3.Controllers
         {
             ViewBag.Message = "Senda inn skrá";
 
-            return View();
+            return View(db.Clients.ToList());
         }
 
         public ActionResult NewForm()
@@ -49,11 +49,11 @@ namespace Prufa3.Controllers
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+        //public ActionResult Contact()
+        //{
+        //    ViewBag.Message = "Your contact page.";
 
-            return View(db.Clients.ToList());
-        }
+        //    return View(db.Clients.ToList());
+        //}
     }
 }

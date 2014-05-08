@@ -6,7 +6,7 @@ using Prufa3.App_Data.DataAccessLayer;
 
 namespace Prufa3.Models.ViewModel
 {
-    public class SettingsView
+    public class SettingsViewModel
     {
         // Tennging i gagnagrunn - breytist thegar repos. koma inn
         private SubDataContext db = new SubDataContext();
