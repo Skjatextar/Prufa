@@ -169,18 +169,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201405080031449_product.cs" />
-    <Compile Include="Migrations\201405080031449_product.Designer.cs">
-      <DependentUpon>201405080031449_product.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201405080116162_product1.cs" />
-    <Compile Include="Migrations\201405080116162_product1.Designer.cs">
-      <DependentUpon>201405080116162_product1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201405080140575_nullable.cs" />
-    <Compile Include="Migrations\201405080140575_nullable.Designer.cs">
-      <DependentUpon>201405080140575_nullable.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Entity\Client.cs" />
@@ -196,8 +184,6 @@
     <Compile Include="Models\Repository\CommentRepositorycs.cs" />
     <Compile Include="Models\Repository\RequestRepository.cs" />
     <Compile Include="Models\Repository\SubFileRepository.cs" />
-    <Compile Include="Models\Students.cs" />
-    <Compile Include="Models\StudentsRepository.cs" />
     <Compile Include="App_Data\DataAccessLayer\SubDataInitializer.cs" />
     <Compile Include="Models\ViewModel\CommentViewModel.cs" />
     <Compile Include="Models\ViewModel\RequestSearchModel.cs" />
@@ -277,17 +263,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201405080031449_product.resx">
-      <DependentUpon>201405080031449_product.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201405080116162_product1.resx">
-      <DependentUpon>201405080116162_product1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201405080140575_nullable.resx">
-      <DependentUpon>201405080140575_nullable.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

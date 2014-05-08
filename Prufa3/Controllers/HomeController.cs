@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using Prufa3.App_Data.DataAccessLayer;
 using Prufa3.Models.Interface;
 using Prufa3.Models.Repository;
-using StudentApplication.Models;
+//using StudentApplication.Models;
 using Prufa3.Models;
 
 namespace Prufa3.Controllers
@@ -16,25 +16,25 @@ namespace Prufa3.Controllers
         // Tennging i gagnagrunn - breytist thegar repos. koma inn
         private SubDataContext db = new SubDataContext();
 
-        public ActionResult Index()
-        {
-            StudentRepository repository = new StudentRepository();
-            var model = repository.GetAllStudents();
-            return View(model);
-        }
+        //public ActionResult Index()
+        //{
+        //    StudentRepository repository = new StudentRepository();
+        //    var model = repository.GetAllStudents();
+        //    return View(model);
+        //}
 
-        [HttpGet]
-        public ActionResult info(int? id)
-        {
-            int realid = id.Value;
-            StudentRepository repository = new StudentRepository();
-            var model = repository.GetStudentById(realid);
-            if (id.HasValue)
-            {
-                return View(model);
-            }
-            return View("Notfound");
-        }
+        //[HttpGet]
+        //public ActionResult info(int? id)
+        //{
+        //    int realid = id.Value;
+        //    StudentRepository repository = new StudentRepository();
+        //    var model = repository.GetStudentById(realid);
+        //    if (id.HasValue)
+        //    {
+        //        return View(model);
+        //    }
+        //    return View("Notfound");
+        //}
 
         public ActionResult Search()
         {

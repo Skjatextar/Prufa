@@ -7,13 +7,24 @@ using Prufa3.Models.Interface;
 
 namespace Prufa3.Models.Repository
 {
-    public class ClientRepository : IClientRepository
-    {
-        private SubDataContext _context;
+    //public class ClientRepository : IClientRepository
+    //{
+    //    private SubDataContext s_dB
 
-        public IQueryable<Models.Entity.Client> GetClients()
-        {
-            return _context.Clients;
-        }
-    }
+    //    public IQueryable<Entity.Client> GetClients()
+    //    {
+    //        throw new NotImplementedException();
+    //    }
+    //}
+
+
+    //public class ClientRepository : IClientRepository
+    //{
+    //    private SubDataContext _context;
+
+    //    public IQueryable<Models.Entity.Client> GetClients()
+    //    {
+    //        return _context.Clients;
+    //    }
+    //}
 }

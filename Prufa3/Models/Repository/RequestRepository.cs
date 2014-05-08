@@ -7,13 +7,13 @@ using Prufa3.Models.Interface;
 
 namespace Prufa3.Models.Repository
 {
-    public class RequestRepository : IRequestRepository
-    {
-        private SubDataContext _context;
+    //public class RequestRepository : IRequestRepository
+    //{
+    //    private SubDataContext _context;
 
-        public IQueryable<Models.Entity.Request> GetRequests()
-        {
-            return _context.Requests;
-        }
-    }
+    //    public IQueryable<Models.Entity.Request> GetRequests()
+    //    {
+    //        return _context.Requests;
+    //    }
+    //}
 }

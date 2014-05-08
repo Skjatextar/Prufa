@@ -7,13 +7,13 @@ using Prufa3.Models.Interface;
 
 namespace Prufa3.Models.Repository
 {
-    public class SubFileRepository : ISubFileRepository
-    {
-        private SubDataContext _context;
+    //public class SubFileRepository : ISubFileRepository
+    //{
+    //    private SubDataContext _context;
 
-        public IQueryable<Models.Entity.SubFile> GetSubFiles()
-        {
-            return _context.SubFiles;
-        }
-    }
+    //    public IQueryable<Models.Entity.SubFile> GetSubFiles()
+    //    {
+    //        return _context.SubFiles;
+    //    }
+    //}
 }
